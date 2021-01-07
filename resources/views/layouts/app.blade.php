@@ -5,7 +5,70 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>PERPUSKU - GILACODING.COM</title>
+  <title>UAS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon
+	============================================ -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{asset('base/img/favicon.ico')}}">
+  <!-- Google Fonts
+	============================================ -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
+  <!-- Bootstrap CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/bootstrap.min.css')}}">
+  <!-- Bootstrap CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/font-awesome.min.css')}}">
+  <!-- adminpro icon CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/adminpro-custon-icon.css')}}">
+  <!-- meanmenu icon CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/meanmenu.min.css')}}">
+  <!-- mCustomScrollbar CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/jquery.mCustomScrollbar.min.css')}}">
+  <!-- animate CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/animate.css')}}">
+  <!-- normalize CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/normalize.css')}}">
+  <!-- form CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/form.css')}}">
+  <!-- style CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/style.css')}}">
+  <!-- responsive CSS
+	============================================ -->
+  <link rel="stylesheet" href="{{asset('base/css/responsive.css')}}">
+  <!-- modernizr JS
+	============================================ -->
+  <script src="{{asset('base/js/vendor/modernizr-2.8.3.min.js')}}"></script>    <script src="{{asset('base/js/vendor/jquery-1.11.3.min.js')}}"></script>
+  <!-- bootstrap JS
+	============================================ -->
+  <script src="{{asset('base/js/bootstrap.min.js')}}"></script>
+  <!-- meanmenu JS
+	============================================ -->
+  <script src="{{asset('base/js/jquery.meanmenu.js')}}"></script>
+  <!-- mCustomScrollbar JS
+	============================================ -->
+  <script src="{{asset('base/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+  <!-- sticky JS
+	============================================ -->
+  <script src="{{asset('base/js/jquery.sticky.js')}}"></script>
+  <!-- scrollUp JS
+	============================================ -->
+  <script src="{{asset('base/js/jquery.scrollUp.min.js')}}"></script>
+  <!-- form validate JS
+	============================================ -->
+  <script src="{{asset('base/js/jquery.form.min.js')}}"></script>
+  <script src="{{asset('base/js/jquery.validate.min.js')}}"></script>
+  <script src="{{asset('base/js/form-active.js')}}"></script>
+  <!-- main JS
+	============================================ -->
+  <script src="{{asset('base/js/main.js')}}"></script>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.base.css')}}">
