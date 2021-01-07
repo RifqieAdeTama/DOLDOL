@@ -144,9 +144,9 @@ $(document).ready(function() {
                         </div>
 
                         <button type="submit" class="btn btn-primary" id="submit">
-                                    Update
+                                    Simpan
                         </button>
-                        <a href="{{route('buku.index')}}" class="btn btn-light pull-right">Back</a>
+                        <a href="{{route('buku.index')}}" class="btn btn-light pull-right">Kembali</a>
                     </div>
                   </div>
                 </div>

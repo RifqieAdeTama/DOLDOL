@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,69 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>UAS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- favicon
-	============================================ -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{asset('base/img/favicon.ico')}}">
-  <!-- Google Fonts
-	============================================ -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
-  <!-- Bootstrap CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/bootstrap.min.css')}}">
-  <!-- Bootstrap CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/font-awesome.min.css')}}">
-  <!-- adminpro icon CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/adminpro-custon-icon.css')}}">
-  <!-- meanmenu icon CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/meanmenu.min.css')}}">
-  <!-- mCustomScrollbar CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/jquery.mCustomScrollbar.min.css')}}">
-  <!-- animate CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/animate.css')}}">
-  <!-- normalize CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/normalize.css')}}">
-  <!-- form CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/form.css')}}">
-  <!-- style CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/style.css')}}">
-  <!-- responsive CSS
-	============================================ -->
-  <link rel="stylesheet" href="{{asset('base/css/responsive.css')}}">
-  <!-- modernizr JS
-	============================================ -->
-  <script src="{{asset('base/js/vendor/modernizr-2.8.3.min.js')}}"></script>    <script src="{{asset('base/js/vendor/jquery-1.11.3.min.js')}}"></script>
-  <!-- bootstrap JS
-	============================================ -->
-  <script src="{{asset('base/js/bootstrap.min.js')}}"></script>
-  <!-- meanmenu JS
-	============================================ -->
-  <script src="{{asset('base/js/jquery.meanmenu.js')}}"></script>
-  <!-- mCustomScrollbar JS
-	============================================ -->
-  <script src="{{asset('base/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-  <!-- sticky JS
-	============================================ -->
-  <script src="{{asset('base/js/jquery.sticky.js')}}"></script>
-  <!-- scrollUp JS
-	============================================ -->
-  <script src="{{asset('base/js/jquery.scrollUp.min.js')}}"></script>
-  <!-- form validate JS
-	============================================ -->
-  <script src="{{asset('base/js/jquery.form.min.js')}}"></script>
-  <script src="{{asset('base/js/jquery.validate.min.js')}}"></script>
-  <script src="{{asset('base/js/form-active.js')}}"></script>
-  <!-- main JS
-	============================================ -->
-  <script src="{{asset('base/js/main.js')}}"></script>
+  
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('vendors/iconfonts/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('vendors/css/vendor.bundle.base.css')}}">
@@ -92,8 +31,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-        <a class="navbar-brand brand-logo" href="index.html" style="color: #2d2d2d">
-          PERPUSKU
+        <a class="navbar-brand brand-logo" href="" style="color: #2d2d2d">
+          Arena of Book
         </a>
            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
           <span class="icon-menu"></span>
@@ -120,11 +59,11 @@
                 </div>
               </a>
               <a class="dropdown-item" style="margin-top: 20px;" href="{{route('user.edit', Auth::user()->id)}}">
-               Edit Profile
+               Profil
               </a>
               <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                 Sign Out
+                 Log Out
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
@@ -170,6 +109,7 @@
   <script src="{{asset('js/dataTables.bootstrap4.min.js')}}"></script>
   <script src="{{asset('js/sweetalert2.all.js')}}"></script>
   <script src="{{asset('js/select2.min.js')}}"></script>
+
   @include('sweetalert::alert')
   @section('js')
 

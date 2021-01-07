@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('buku_id') ? ' has-error' : '' }}">
-                            <label for="buku_id" class="col-md-4 control-label">Buku</label>
+                            <label for="buku_id" class="col-md-4 control-label">Judul Buku</label>
                             <div class="col-md-6">
                                 <div class="input-group">
                                 <input id="buku_judul" type="text" class="form-control" readonly="" required>

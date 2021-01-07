@@ -21,7 +21,7 @@ $(document).ready(function() {
                 <div class="col-12">
                   <div class="card">
                     <div class="card-body">
-                      <h4 class="card-title">Tambah Anggota baru</h4>
+                      <h4 class="card-title">Buat Data Anggota</h4>
                       
                         <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
                             <label for="nama" class="col-md-4 control-label">Nama</label>
@@ -70,7 +70,7 @@ $(document).ready(function() {
                         </div>
 
                         <div class="form-group{{ $errors->has('level') ? ' has-error' : '' }}">
-                            <label for="level" class="col-md-4 control-label">Jenis Kelamin</label>
+                            <label for="level" class="col-md-4 control-label">Kelamin</label>
                             <div class="col-md-6">
                             <select class="form-control" name="jk" required="">
                                 <option value=""></option>

@@ -35,7 +35,7 @@
 
 
                         <div class="form-group">
-                            <label for="anggota_id" class="col-md-4 control-label">Buku</label>
+                            <label for="anggota_id" class="col-md-4 control-label">Judul Buku</label>
                             <div class="col-md-6">
                                 <input id="buku" type="text" class="form-control" readonly="" value="{{$data->buku->judul}}">
 
@@ -43,7 +43,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="anggota_id" class="col-md-4 control-label">Anggota</label>
+                            <label for="anggota_id" class="col-md-4 control-label">Nama Anggota</label>
                             <div class="col-md-6">
                                 <input id="anggota_nama" type="text" class="form-control" readonly="" value="{{$data->anggota->nama}}">
 
@@ -51,7 +51,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('ket') ? ' has-error' : '' }}">
-                            <label for="ket" class="col-md-4 control-label">Status</label>
+                            <label for="ket" class="col-md-4 control-label">Status Buku</label>
                             <div class="col-md-6">
                                 @if($data->status == 'pinjam')
                                   <label class="badge badge-warning">Pinjam</label>

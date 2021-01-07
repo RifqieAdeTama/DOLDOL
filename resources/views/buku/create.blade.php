@@ -43,7 +43,7 @@ $(document).ready(function() {
                 <div class="col-12">
                   <div class="card">
                     <div class="card-body">
-                      <h4 class="card-title">Tambah Buku baru</h4>
+                      <h4 class="card-title">Tambah Data Buku</h4>
                       
                         <div class="form-group{{ $errors->has('judul') ? ' has-error' : '' }}">
                             <label for="judul" class="col-md-4 control-label">Judul</label>
@@ -112,7 +112,7 @@ $(document).ready(function() {
                             </div>
                         </div>
                         <div class="form-group{{ $errors->has('deskripsi') ? ' has-error' : '' }}">
-                            <label for="deskripsi" class="col-md-4 control-label">Deskripsi</label>
+                            <label for="deskripsi" class="col-md-4 control-label">Keterangan</label>
                             <div class="col-md-12">
                                 <input id="deskripsi" type="text" class="form-control" name="deskripsi" value="{{ old('deskripsi') }}" >
                                 @if ($errors->has('deskripsi'))
@@ -144,12 +144,12 @@ $(document).ready(function() {
                         </div>
 
                         <button type="submit" class="btn btn-primary" id="submit">
-                                    Submit
+                                    Simpan
                         </button>
                         <button type="reset" class="btn btn-danger">
                                     Reset
                         </button>
-                        <a href="{{route('buku.index')}}" class="btn btn-light pull-right">Back</a>
+                        <a href="{{route('buku.index')}}" class="btn btn-light pull-right">Kembali</a>
                     </div>
                   </div>
                 </div>

@@ -16,19 +16,6 @@
   <div class="col-lg-2">
     <a href="{{ route('buku.create') }}" class="btn btn-primary btn-rounded btn-fw"><i class="fa fa-plus"></i> Tambah Buku</a>
   </div>
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <form action="{{ url('import_buku') }}" method="post" class="form-inline" enctype="multipart/form-data">
-            {{ csrf_field() }}
-            <div class="input-group {{ $errors->has('importBuku') ? 'has-error' : '' }}">
-              <input type="file" class="form-control" name="importBuku" required="">
-
-              <span class="input-group-btn">
-                              <button type="submit" class="btn btn-success" style="height: 38px;margin-left: -2px;">Import</button>
-                            </span>
-            </div>
-          </form>
-
-        </div>
     <div class="col-lg-12">
                   @if (Session::has('message'))
                   <div class="alert alert-{{ Session::get('message_type') }}" id="waktu2" style="margin-top:10px;">{{ Session::get('message') }}</div>
@@ -41,13 +28,12 @@
 
                 <div class="card-body">
                   <h4 class="card-title pull-left">Data Buku</h4>
-                  <a href="{{url('format_buku')}}" class="btn btn-xs btn-info pull-right">Format Buku</a>
                   <div class="table-responsive">
                     <table class="table table-striped" id="table">
                       <thead>
                         <tr>
                           <th>
-                            Judul
+                            Judul Buku 
                           </th>
                           <th>
                             ISBN
@@ -56,16 +42,16 @@
                             Pengarang
                           </th>
                           <th>
-                            Tahun
+                            Tahun Terbit 
                           </th>
                           <th>
-                            Stok
+                            Stok Buku 
                           </th>
                           <th>
-                            Rak
+                            Letak Buku 
                           </th>
                           <th>
-                            Action
+
                           </th>
                         </tr>
                       </thead>
@@ -102,15 +88,15 @@
                           </td>
                           <td>
                           <div class="btn-group dropdown">
-                          <button type="button" class="btn btn-success dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Action
+                          <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kelola Data 
                           </button>
                           <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 30px, 0px);">
                             <a class="dropdown-item" href="{{route('buku.edit', $data->id)}}"> Edit </a>
                             <form action="{{ route('buku.destroy', $data->id) }}" class="pull-left"  method="post">
                             {{ csrf_field() }}
                             {{ method_field('delete') }}
-                            <button class="dropdown-item" onclick="return confirm('Anda yakin ingin menghapus data ini?')"> Delete
+                            <button class="dropdown-item" onclick="return confirm('Anda yakin ingin menghapus buku ini?')"> Delete
                             </button>
                           </form>
                            

@@ -1,5 +1,26 @@
-
-<ul class="nav">
+<ul class="nav navbar-nav left-sidebar-menu-pro">
+                        <li class="nav-item {{ setActive(['/', 'home']) }}"  >
+                            <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-home"></i> <span class="mini-dn">Home</span> <span class="indicator-right-menu mini-dn"><i class="fa indicator-mn fa-angle-left"></i></span></a>
+                            <div role="menu" class="dropdown-menu left-menu-dropdown animated flipInX">
+                                <a href="{{url('/')}}" class="dropdown-item">Dashboard</a>
+                            </div>
+                        </li>
+                        @if(Auth::user()->level == 'admin')
+                        <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-flask"></i> <span class="mini-dn">Database</span> <span class="indicator-right-menu mini-dn"><i class="fa indicator-mn fa-angle-left"></i></span></a>
+                            <div role="menu" class="dropdown-menu left-menu-dropdown animated flipInX">
+                                <a href="{{route('anggota.index')}}" class="dropdown-item">Anggota</a>
+                                <a href="{{route('buku.index')}}" class="dropdown-item">Buku</a>
+                                <a href="{{route('user.index')}}" class="dropdown-item">User</a>
+                            </div>
+                        </li>
+                        @endif
+                        <li class="nav-item {{ setActive(['transaksi*']) }}"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fa big-icon fa-pie-chart"></i> <span class="mini-dn">Transaksi</span> <span class="indicator-right-menu mini-dn"><i class="fa indicator-mn fa-angle-left"></i></span></a>
+                            <div role="menu" class="dropdown-menu left-menu-dropdown animated flipInX">
+                                <a href="{{route('transaksi.index')}}" class="dropdown-item">Transaksi</a>
+                            </div>
+                        </li>
+                    </ul>
+<!-- <ul class="nav">
           <li class="nav-item nav-profile">
             <div class="nav-link">
               <div class="user-wrapper">
@@ -67,11 +88,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{{url('laporan/trs')}}">Laporan Transaksi</a>
                 </li>
-                <!--
-                <li class="nav-item">
-                  <a class="nav-link" href="">Laporan Anggota</a>
-                </li>
-                -->
                  <li class="nav-item">
                   <a class="nav-link" href="{{url('laporan/buku')}}">Laporan Buku</a>
                 </li>
@@ -79,4 +95,4 @@
             </div>
           </li>
          
-        </ul>
+        </ul> -->
